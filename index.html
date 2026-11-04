@@ -1485,6 +1485,41 @@
   }
 }
 
+    
+.aman-preview {
+  overflow: hidden;
+}
+
+.aman-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.aman-preview img:hover {
+  transform: scale(1.02);
+}
+
+.aman-preview > a {
+  display: block;
+}
+
+.aman-preview .preview-link {
+  margin-top: 14px;
+  text-align: right;
+}
+
+.aman-preview .preview-link a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
   </style>
 </head>
 
@@ -3380,6 +3415,98 @@
     </div>
 
   </section>
+
+<!-- =====================================================
+     PROJECT 4
+===================================================== -->
+
+<div class="project">
+
+  <div class="project-top">
+
+    <div>
+      <div class="ptag">
+        04 / CLOUD-HOSTED WEB APPLICATION
+      </div>
+
+      <h3>
+        Aman Medicos — Cloud Hosted Pharmacy Website
+      </h3>
+    </div>
+
+    <div class="project-links">
+      <a
+        href="https://amanmedicos.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Live Website ↗
+      </a>
+    </div>
+
+  </div>
+
+  <div class="project-body">
+
+    <div class="project-desc">
+
+      <p>
+        Built and deployed a responsive website for my own pharmacy
+        shop using React, AWS S3, and CloudFront, making it accessible
+        through a custom domain with HTTPS.
+      </p>
+
+      <p>
+        Added delivery enquiry and customer feedback features using
+        API Gateway and Lambda, with automated email notifications
+        through Amazon SNS.
+      </p>
+
+      <div class="tech-row">
+        <span>React</span>
+        <span>AWS S3</span>
+        <span>CloudFront</span>
+        <span>API Gateway</span>
+        <span>AWS Lambda</span>
+        <span>Amazon SNS</span>
+        <span>HTTPS</span>
+      </div>
+
+    </div>
+
+    <div class="arch-card aman-preview">
+
+      <div class="arch-label">
+        LIVE PROJECT PREVIEW
+      </div>
+
+      <a
+        href="https://amanmedicos.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="images/aman-medicos-preview.png"
+          alt="Aman Medicos pharmacy website homepage"
+          loading="lazy"
+        />
+      </a>
+
+      <div class="preview-link">
+        <a
+          href="https://amanmedicos.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit Aman Medicos ↗
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
 
   <!-- =========================================================
