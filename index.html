@@ -2276,1182 +2276,651 @@
       </div>
 
 
-      <!-- =====================================================
-           PROJECT 1
-      ===================================================== -->
+     
+<section id="projects">
 
-      <div class="project">
+  <div class="wrap">
 
-        <div class="project-top">
+    <div class="section-head">
 
-          <div>
-
-            <div class="ptag">
-              01 / OBSERVABILITY &amp; ALERTING
-            </div>
-
-            <h3>
-              AWS Monitoring &amp; Alerting System
-            </h3>
-
-          </div>
-
-
-          <div class="project-links">
-
-            <a
-              href="https://github.com/Parthsharma91"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub ↗
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="project-body">
-
-          <div class="project-desc">
-
-            <p>
-              A cloud monitoring system using AWS CloudWatch to track
-              logs, metrics, and system performance in real time,
-              detecting anomalies with CloudWatch Alarms. Integrated
-              Amazon SNS with a Python-based log simulator to send
-              automated email alerts for critical incidents in a
-              production-like environment.
-            </p>
-
-
-            <div class="tech-row">
-
-              <span>
-                AWS CloudWatch
-              </span>
-
-              <span>
-                Amazon SNS
-              </span>
-
-              <span>
-                Python
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <div class="arch-card">
-
-            <div class="arch-label">
-              Monitoring &amp; Alert Flow
-            </div>
-
-
-            <svg
-              viewBox="0 0 460 300"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="AWS monitoring and alert flow architecture"
-            >
-
-              <defs>
-
-                <marker
-                  id="arrow1"
-                  markerWidth="8"
-                  markerHeight="8"
-                  refX="6"
-                  refY="3"
-                  orient="auto"
-                >
-                  <path
-                    d="M0,0 L6,3 L0,6 Z"
-                    fill="#5C6E8C"
-                  />
-                </marker>
-
-              </defs>
-
-
-              <text
-                x="230"
-                y="24"
-                text-anchor="middle"
-                font-family="JetBrains Mono, monospace"
-                font-size="10"
-                fill="#5C6E8C"
-                letter-spacing="1"
-              >
-                LOGS → METRICS → ALARM → NOTIFY
-              </text>
-
-
-              <rect
-                x="20"
-                y="55"
-                width="120"
-                height="54"
-                rx="8"
-                fill="#161F33"
-                stroke="#60A5FA"
-                stroke-width="1.4"
-              />
-
-              <text
-                x="80"
-                y="78"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                Python Log
-              </text>
-
-              <text
-                x="80"
-                y="92"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Simulator
-              </text>
-
-
-              <rect
-                x="175"
-                y="55"
-                width="120"
-                height="54"
-                rx="8"
-                fill="#161F33"
-                stroke="#5EEAD4"
-                stroke-width="1.4"
-              />
-
-              <text
-                x="235"
-                y="78"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                CloudWatch
-              </text>
-
-              <text
-                x="235"
-                y="92"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Logs &amp; Metrics
-              </text>
-
-
-              <rect
-                x="330"
-                y="55"
-                width="110"
-                height="54"
-                rx="8"
-                fill="#161F33"
-                stroke="#FBBF66"
-                stroke-width="1.4"
-              />
-
-              <text
-                x="385"
-                y="78"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                CloudWatch
-              </text>
-
-              <text
-                x="385"
-                y="92"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Alarms
-              </text>
-
-
-              <line
-                x1="140"
-                y1="82"
-                x2="175"
-                y2="82"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                marker-end="url(#arrow1)"
-              />
-
-              <line
-                x1="295"
-                y1="82"
-                x2="330"
-                y2="82"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                marker-end="url(#arrow1)"
-              />
-
-
-              <rect
-                x="175"
-                y="150"
-                width="120"
-                height="54"
-                rx="8"
-                fill="#161F33"
-                stroke="#FBBF66"
-                stroke-width="1.4"
-              />
-
-              <text
-                x="235"
-                y="173"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                Amazon SNS
-              </text>
-
-              <text
-                x="235"
-                y="187"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Topic dispatch
-              </text>
-
-
-              <line
-                x1="385"
-                y1="109"
-                x2="290"
-                y2="150"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                marker-end="url(#arrow1)"
-              />
-
-
-              <rect
-                x="330"
-                y="150"
-                width="110"
-                height="54"
-                rx="8"
-                fill="#161F33"
-                stroke="#60A5FA"
-                stroke-width="1.4"
-              />
-
-              <text
-                x="385"
-                y="173"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                Email Alert
-              </text>
-
-              <text
-                x="385"
-                y="187"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                On-call engineer
-              </text>
-
-
-              <line
-                x1="295"
-                y1="177"
-                x2="330"
-                y2="177"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                marker-end="url(#arrow1)"
-              />
-
-
-              <rect
-                x="60"
-                y="235"
-                width="340"
-                height="46"
-                rx="8"
-                fill="none"
-                stroke="#3A4560"
-                stroke-width="1"
-                stroke-dasharray="4 3"
-              />
-
-              <text
-                x="230"
-                y="263"
-                text-anchor="middle"
-                fill="#5C6E8C"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Anomaly threshold breach triggers the alarm state → notification chain
-              </text>
-
-            </svg>
-
-          </div>
-
-        </div>
-
+      <div class="eyebrow">
+        04 · Projects
       </div>
 
-
-      <!-- =====================================================
-           PROJECT 2
-      ===================================================== -->
-
-      <div class="project">
-
-        <div class="project-top">
-
-          <div>
-
-            <div class="ptag">
-              02 / INFRASTRUCTURE AS CODE
-            </div>
-
-            <h3>
-              AWS Infrastructure Automation using Terraform
-            </h3>
-
-          </div>
-
-
-          <div class="project-links">
-
-            <a
-              href="https://github.com/Parthsharma91"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub ↗
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="project-body">
-
-          <div class="project-desc">
-
-            <p>
-              Provisioned AWS infrastructure using Terraform (IaC),
-              with reusable infrastructure templates managed with Git
-              and GitHub. Automated EC2 and IAM resource provisioning
-              to ensure repeatable, consistent deployments.
-            </p>
-
-
-            <div class="tech-row">
-
-              <span>
-                Terraform
-              </span>
-
-              <span>
-                AWS EC2
-              </span>
-
-              <span>
-                AWS S3
-              </span>
-
-              <span>
-                AWS IAM
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <div class="arch-card">
-
-            <div class="arch-label">
-              Provisioning Pipeline
-            </div>
-
-
-            <svg
-              viewBox="0 0 460 300"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Terraform AWS infrastructure provisioning architecture"
-            >
-
-              <defs>
-
-                <marker
-                  id="arrow2"
-                  markerWidth="8"
-                  markerHeight="8"
-                  refX="6"
-                  refY="3"
-                  orient="auto"
-                >
-                  <path
-                    d="M0,0 L6,3 L0,6 Z"
-                    fill="#5C6E8C"
-                  />
-                </marker>
-
-              </defs>
-
-
-              <text
-                x="230"
-                y="24"
-                text-anchor="middle"
-                font-family="JetBrains Mono, monospace"
-                font-size="10"
-                fill="#5C6E8C"
-                letter-spacing="1"
-              >
-                CODE → PLAN/APPLY → AWS RESOURCES
-              </text>
-
-
-              <rect
-                x="20"
-                y="55"
-                width="115"
-                height="54"
-                rx="8"
-                fill="#161F33"
-                stroke="#5EEAD4"
-                stroke-width="1.4"
-              />
-
-              <text
-                x="77"
-                y="78"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                Git / GitHub
-              </text>
-
-              <text
-                x="77"
-                y="92"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                .tf templates
-              </text>
-
-
-              <rect
-                x="175"
-                y="55"
-                width="120"
-                height="54"
-                rx="8"
-                fill="#161F33"
-                stroke="#60A5FA"
-                stroke-width="1.4"
-              />
-
-              <text
-                x="235"
-                y="78"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                Terraform
-              </text>
-
-              <text
-                x="235"
-                y="92"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                plan · apply
-              </text>
-
-
-              <line
-                x1="135"
-                y1="82"
-                x2="175"
-                y2="82"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                marker-end="url(#arrow2)"
-              />
-
-
-              <rect
-                x="330"
-                y="30"
-                width="110"
-                height="46"
-                rx="8"
-                fill="#161F33"
-                stroke="#FBBF66"
-                stroke-width="1.3"
-              />
-
-              <text
-                x="385"
-                y="53"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                EC2
-              </text>
-
-              <text
-                x="385"
-                y="66"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Compute
-              </text>
-
-
-              <rect
-                x="330"
-                y="86"
-                width="110"
-                height="46"
-                rx="8"
-                fill="#161F33"
-                stroke="#FBBF66"
-                stroke-width="1.3"
-              />
-
-              <text
-                x="385"
-                y="109"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                IAM
-              </text>
-
-              <text
-                x="385"
-                y="122"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Roles &amp; policies
-              </text>
-
-
-              <rect
-                x="330"
-                y="142"
-                width="110"
-                height="46"
-                rx="8"
-                fill="#161F33"
-                stroke="#FBBF66"
-                stroke-width="1.3"
-              />
-
-              <text
-                x="385"
-                y="165"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                S3
-              </text>
-
-              <text
-                x="385"
-                y="178"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Storage
-              </text>
-
-
-              <line
-                x1="295"
-                y1="70"
-                x2="330"
-                y2="53"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                marker-end="url(#arrow2)"
-              />
-
-              <line
-                x1="295"
-                y1="82"
-                x2="330"
-                y2="109"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                marker-end="url(#arrow2)"
-              />
-
-              <line
-                x1="295"
-                y1="95"
-                x2="330"
-                y2="163"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                marker-end="url(#arrow2)"
-              />
-
-
-              <rect
-                x="60"
-                y="225"
-                width="340"
-                height="56"
-                rx="8"
-                fill="none"
-                stroke="#3A4560"
-                stroke-width="1"
-                stroke-dasharray="4 3"
-              />
-
-              <text
-                x="230"
-                y="247"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9.5"
-              >
-                REPEATABLE DEPLOYMENTS
-              </text>
-
-              <text
-                x="230"
-                y="263"
-                text-anchor="middle"
-                fill="#5C6E8C"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                same templates re-applied for consistent environments
-              </text>
-
-
-              <line
-                x1="230"
-                y1="188"
-                x2="230"
-                y2="225"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                stroke-dasharray="3 2"
-                marker-end="url(#arrow2)"
-              />
-
-            </svg>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- =====================================================
-           PROJECT 3
-      ===================================================== -->
-
-      <div class="project">
-
-        <div class="project-top">
-
-          <div>
-
-            <div class="ptag">
-              03 / CONTAINERIZED DEPLOYMENT
-            </div>
-
-            <h3>
-              Dockerized Web App Deployment on AWS EC2
-            </h3>
-
-          </div>
-
-
-          <div class="project-links">
-
-            <a
-              href="https://github.com/Parthsharma91"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub ↗
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="project-body">
-
-          <div class="project-desc">
-
-            <p>
-              Containerized a web application using Docker and deployed
-              it on AWS EC2. Configured networking and SSH access to
-              enable reliable deployment and remote management of the
-              running container.
-            </p>
-
-
-            <div class="tech-row">
-
-              <span>
-                Docker
-              </span>
-
-              <span>
-                AWS EC2
-              </span>
-
-              <span>
-                SSH
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <div class="arch-card">
-
-            <div class="arch-label">
-              Deployment Architecture
-            </div>
-
-
-            <svg
-              viewBox="0 0 460 300"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Docker application deployment architecture on AWS EC2"
-            >
-
-              <defs>
-
-                <marker
-                  id="arrow3"
-                  markerWidth="8"
-                  markerHeight="8"
-                  refX="6"
-                  refY="3"
-                  orient="auto"
-                >
-                  <path
-                    d="M0,0 L6,3 L0,6 Z"
-                    fill="#5C6E8C"
-                  />
-                </marker>
-
-              </defs>
-
-
-              <text
-                x="230"
-                y="24"
-                text-anchor="middle"
-                font-family="JetBrains Mono, monospace"
-                font-size="10"
-                fill="#5C6E8C"
-                letter-spacing="1"
-              >
-                BUILD → SHIP → RUN ON EC2
-              </text>
-
-
-              <rect
-                x="20"
-                y="60"
-                width="115"
-                height="54"
-                rx="8"
-                fill="#161F33"
-                stroke="#60A5FA"
-                stroke-width="1.4"
-              />
-
-              <text
-                x="77"
-                y="83"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                Docker Build
-              </text>
-
-              <text
-                x="77"
-                y="97"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                App image
-              </text>
-
-
-              <rect
-                x="175"
-                y="60"
-                width="115"
-                height="54"
-                rx="8"
-                fill="#161F33"
-                stroke="#5EEAD4"
-                stroke-width="1.4"
-              />
-
-              <text
-                x="232"
-                y="83"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                SSH Deploy
-              </text>
-
-              <text
-                x="232"
-                y="97"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Secure transfer
-              </text>
-
-
-              <line
-                x1="135"
-                y1="87"
-                x2="175"
-                y2="87"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                marker-end="url(#arrow3)"
-              />
-
-
-              <rect
-                x="325"
-                y="45"
-                width="115"
-                height="90"
-                rx="10"
-                fill="#161F33"
-                stroke="#FBBF66"
-                stroke-width="1.4"
-              />
-
-              <text
-                x="382"
-                y="66"
-                text-anchor="middle"
-                fill="#E7ECF5"
-                font-family="JetBrains Mono, monospace"
-                font-size="11"
-              >
-                AWS EC2
-              </text>
-
-              <text
-                x="382"
-                y="80"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Instance
-              </text>
-
-
-              <rect
-                x="343"
-                y="90"
-                width="80"
-                height="34"
-                rx="6"
-                fill="#0D1220"
-                stroke="#5EEAD4"
-                stroke-width="1"
-              />
-
-              <text
-                x="383"
-                y="110"
-                text-anchor="middle"
-                fill="#5EEAD4"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Container
-              </text>
-
-
-              <line
-                x1="290"
-                y1="87"
-                x2="325"
-                y2="87"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                marker-end="url(#arrow3)"
-              />
-
-
-              <rect
-                x="60"
-                y="180"
-                width="340"
-                height="90"
-                rx="10"
-                fill="none"
-                stroke="#3A4560"
-                stroke-width="1"
-                stroke-dasharray="4 3"
-              />
-
-              <text
-                x="230"
-                y="202"
-                text-anchor="middle"
-                fill="#8DA0BE"
-                font-family="JetBrains Mono, monospace"
-                font-size="9.5"
-              >
-                NETWORKING
-              </text>
-
-              <text
-                x="230"
-                y="222"
-                text-anchor="middle"
-                fill="#5C6E8C"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                Security group configured for inbound HTTP/HTTPS
-              </text>
-
-              <text
-                x="230"
-                y="238"
-                text-anchor="middle"
-                fill="#5C6E8C"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                and SSH access for remote management
-              </text>
-
-              <text
-                x="230"
-                y="256"
-                text-anchor="middle"
-                fill="#5C6E8C"
-                font-family="JetBrains Mono, monospace"
-                font-size="9"
-              >
-                of the deployed container
-              </text>
-
-
-              <line
-                x1="382"
-                y1="135"
-                x2="382"
-                y2="180"
-                stroke="#5C6E8C"
-                stroke-width="1.2"
-                stroke-dasharray="3 2"
-                marker-end="url(#arrow3)"
-              />
-
-            </svg>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-<!-- =====================================================
-     PROJECT 4
-===================================================== -->
-
-<div class="project">
-
-  <div class="project-top">
-
-    <div>
-      <div class="ptag">
-        04 / CLOUD-HOSTED WEB APPLICATION
-      </div>
-
-      <h3>
-        Aman Medicos — Cloud Hosted Pharmacy Website
-      </h3>
-    </div>
-
-    <div class="project-links">
-      <a
-        href="https://amanmedicos.in/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Live Website ↗
-      </a>
-    </div>
-
-  </div>
-
-  <div class="project-body">
-
-    <div class="project-desc">
+      <h2>
+        Cloud infrastructure, built and automated.
+      </h2>
 
       <p>
-        Built and deployed a responsive website for my own pharmacy
-        shop using React, AWS S3, and CloudFront, making it accessible
-        through a custom domain with HTTPS.
+        Four projects covering AWS monitoring, infrastructure-as-code,
+        containerized deployment, and a cloud-hosted web application.
       </p>
 
-      <p>
-        Added delivery enquiry and customer feedback features using
-        API Gateway and Lambda, with automated email notifications
-        through Amazon SNS.
-      </p>
+    </div>
 
-      <div class="tech-row">
-        <span>React</span>
-        <span>AWS S3</span>
-        <span>CloudFront</span>
-        <span>API Gateway</span>
-        <span>AWS Lambda</span>
-        <span>Amazon SNS</span>
-        <span>HTTPS</span>
+    <!-- =====================================================
+         PROJECT 1
+    ===================================================== -->
+
+    <div class="project">
+
+      <div class="project-top">
+
+        <div>
+          <div class="ptag">
+            01 / OBSERVABILITY &amp; ALERTING
+          </div>
+
+          <h3>
+            AWS Monitoring &amp; Alerting System
+          </h3>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/Parthsharma91"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <div class="project-desc">
+
+          <p>
+            A cloud monitoring system using AWS CloudWatch to track
+            logs, metrics, and system performance in real time,
+            detecting anomalies with CloudWatch Alarms. Integrated
+            Amazon SNS with a Python-based log simulator to send
+            automated email alerts for critical incidents in a
+            production-like environment.
+          </p>
+
+          <div class="tech-row">
+            <span>AWS CloudWatch</span>
+            <span>Amazon SNS</span>
+            <span>Python</span>
+          </div>
+
+        </div>
+
+        <div class="arch-card">
+
+          <div class="arch-label">
+            Monitoring &amp; Alert Flow
+          </div>
+
+          <svg
+            viewBox="0 0 460 300"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="AWS monitoring and alert flow architecture"
+          >
+
+            <defs>
+              <marker
+                id="arrow1"
+                markerWidth="8"
+                markerHeight="8"
+                refX="6"
+                refY="3"
+                orient="auto"
+              >
+                <path d="M0,0 L6,3 L0,6 Z" fill="#5C6E8C"/>
+              </marker>
+            </defs>
+
+            <text x="230" y="24" text-anchor="middle"
+              font-family="JetBrains Mono, monospace"
+              font-size="10" fill="#5C6E8C" letter-spacing="1">
+              LOGS → METRICS → ALARM → NOTIFY
+            </text>
+
+            <rect x="20" y="55" width="120" height="54" rx="8"
+              fill="#161F33" stroke="#60A5FA" stroke-width="1.4"/>
+
+            <text x="80" y="78" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">Python Log</text>
+
+            <text x="80" y="92" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">Simulator</text>
+
+            <rect x="175" y="55" width="120" height="54" rx="8"
+              fill="#161F33" stroke="#5EEAD4" stroke-width="1.4"/>
+
+            <text x="235" y="78" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">CloudWatch</text>
+
+            <text x="235" y="92" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">Logs &amp; Metrics</text>
+
+            <rect x="330" y="55" width="110" height="54" rx="8"
+              fill="#161F33" stroke="#FBBF66" stroke-width="1.4"/>
+
+            <text x="385" y="78" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">CloudWatch</text>
+
+            <text x="385" y="92" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">Alarms</text>
+
+            <line x1="140" y1="82" x2="175" y2="82"
+              stroke="#5C6E8C" stroke-width="1.2"
+              marker-end="url(#arrow1)"/>
+
+            <line x1="295" y1="82" x2="330" y2="82"
+              stroke="#5C6E8C" stroke-width="1.2"
+              marker-end="url(#arrow1)"/>
+
+            <rect x="175" y="150" width="120" height="54" rx="8"
+              fill="#161F33" stroke="#FBBF66" stroke-width="1.4"/>
+
+            <text x="235" y="173" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">Amazon SNS</text>
+
+            <text x="235" y="187" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">Topic dispatch</text>
+
+            <line x1="385" y1="109" x2="290" y2="150"
+              stroke="#5C6E8C" stroke-width="1.2"
+              marker-end="url(#arrow1)"/>
+
+            <rect x="330" y="150" width="110" height="54" rx="8"
+              fill="#161F33" stroke="#60A5FA" stroke-width="1.4"/>
+
+            <text x="385" y="173" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">Email Alert</text>
+
+            <text x="385" y="187" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">On-call engineer</text>
+
+            <line x1="295" y1="177" x2="330" y2="177"
+              stroke="#5C6E8C" stroke-width="1.2"
+              marker-end="url(#arrow1)"/>
+
+            <rect x="60" y="235" width="340" height="46" rx="8"
+              fill="none" stroke="#3A4560" stroke-width="1"
+              stroke-dasharray="4 3"/>
+
+            <text x="230" y="263" text-anchor="middle"
+              fill="#5C6E8C" font-family="JetBrains Mono, monospace"
+              font-size="9">
+              Anomaly threshold breach triggers the alarm state → notification chain
+            </text>
+
+          </svg>
+
+        </div>
+
       </div>
 
     </div>
 
-    <div class="arch-card aman-preview">
 
-      <div class="arch-label">
-        LIVE PROJECT PREVIEW
+    <!-- =====================================================
+         PROJECT 2
+    ===================================================== -->
+
+    <div class="project">
+
+      <div class="project-top">
+
+        <div>
+          <div class="ptag">
+            02 / INFRASTRUCTURE AS CODE
+          </div>
+
+          <h3>
+            AWS Infrastructure Automation using Terraform
+          </h3>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/Parthsharma91"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+        </div>
+
       </div>
 
-      <a
-        href="https://amanmedicos.in/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="images/aman-medicos-preview.png"
-          alt="Aman Medicos pharmacy website homepage"
-          loading="lazy"
-        />
-      </a>
+      <div class="project-body">
 
-      <div class="preview-link">
-        <a
-          href="https://amanmedicos.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Aman Medicos ↗
-        </a>
+        <div class="project-desc">
+
+          <p>
+            Provisioned AWS infrastructure using Terraform (IaC),
+            with reusable infrastructure templates managed with Git
+            and GitHub. Automated EC2 and IAM resource provisioning
+            to ensure repeatable, consistent deployments.
+          </p>
+
+          <div class="tech-row">
+            <span>Terraform</span>
+            <span>AWS EC2</span>
+            <span>AWS S3</span>
+            <span>AWS IAM</span>
+          </div>
+
+        </div>
+
+        <div class="arch-card">
+
+          <div class="arch-label">
+            Provisioning Pipeline
+          </div>
+
+          <svg
+            viewBox="0 0 460 300"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Terraform AWS infrastructure provisioning architecture"
+          >
+
+            <defs>
+              <marker
+                id="arrow2"
+                markerWidth="8"
+                markerHeight="8"
+                refX="6"
+                refY="3"
+                orient="auto"
+              >
+                <path d="M0,0 L6,3 L0,6 Z" fill="#5C6E8C"/>
+              </marker>
+            </defs>
+
+            <text x="230" y="24" text-anchor="middle"
+              font-family="JetBrains Mono, monospace"
+              font-size="10" fill="#5C6E8C" letter-spacing="1">
+              CODE → PLAN/APPLY → AWS RESOURCES
+            </text>
+
+            <rect x="20" y="55" width="115" height="54" rx="8"
+              fill="#161F33" stroke="#5EEAD4" stroke-width="1.4"/>
+
+            <text x="77" y="78" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">Git / GitHub</text>
+
+            <text x="77" y="92" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">.tf templates</text>
+
+            <rect x="175" y="55" width="120" height="54" rx="8"
+              fill="#161F33" stroke="#60A5FA" stroke-width="1.4"/>
+
+            <text x="235" y="78" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">Terraform</text>
+
+            <text x="235" y="92" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">plan · apply</text>
+
+            <line x1="135" y1="82" x2="175" y2="82"
+              stroke="#5C6E8C" stroke-width="1.2"
+              marker-end="url(#arrow2)"/>
+
+            <rect x="330" y="30" width="110" height="46" rx="8"
+              fill="#161F33" stroke="#FBBF66" stroke-width="1.3"/>
+
+            <text x="385" y="53" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">EC2</text>
+
+            <text x="385" y="66" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">Compute</text>
+
+            <rect x="330" y="86" width="110" height="46" rx="8"
+              fill="#161F33" stroke="#FBBF66" stroke-width="1.3"/>
+
+            <text x="385" y="109" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">IAM</text>
+
+            <text x="385" y="122" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">Roles &amp; policies</text>
+
+            <rect x="330" y="142" width="110" height="46" rx="8"
+              fill="#161F33" stroke="#FBBF66" stroke-width="1.3"/>
+
+            <text x="385" y="165" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">S3</text>
+
+            <text x="385" y="178" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">Storage</text>
+
+            <line x1="295" y1="70" x2="330" y2="53"
+              stroke="#5C6E8C" stroke-width="1.2"
+              marker-end="url(#arrow2)"/>
+
+            <line x1="295" y1="82" x2="330" y2="109"
+              stroke="#5C6E8C" stroke-width="1.2"
+              marker-end="url(#arrow2)"/>
+
+            <line x1="295" y1="95" x2="330" y2="163"
+              stroke="#5C6E8C" stroke-width="1.2"
+              marker-end="url(#arrow2)"/>
+
+            <rect x="60" y="225" width="340" height="56" rx="8"
+              fill="none" stroke="#3A4560" stroke-width="1"
+              stroke-dasharray="4 3"/>
+
+            <text x="230" y="247" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9.5">REPEATABLE DEPLOYMENTS</text>
+
+            <text x="230" y="263" text-anchor="middle"
+              fill="#5C6E8C" font-family="JetBrains Mono, monospace"
+              font-size="9">
+              same templates re-applied for consistent environments
+            </text>
+
+            <line x1="230" y1="188" x2="230" y2="225"
+              stroke="#5C6E8C" stroke-width="1.2"
+              stroke-dasharray="3 2"
+              marker-end="url(#arrow2)"/>
+
+          </svg>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         PROJECT 3
+    ===================================================== -->
+
+    <div class="project">
+
+      <div class="project-top">
+
+        <div>
+          <div class="ptag">
+            03 / CONTAINERIZED DEPLOYMENT
+          </div>
+
+          <h3>
+            Dockerized Web App Deployment on AWS EC2
+          </h3>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/Parthsharma91"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <div class="project-desc">
+
+          <p>
+            Containerized a web application using Docker and deployed
+            it on AWS EC2. Configured networking and SSH access to
+            enable reliable deployment and remote management of the
+            running container.
+          </p>
+
+          <div class="tech-row">
+            <span>Docker</span>
+            <span>AWS EC2</span>
+            <span>SSH</span>
+          </div>
+
+        </div>
+
+        <div class="arch-card">
+
+          <div class="arch-label">
+            Deployment Architecture
+          </div>
+
+          <svg
+            viewBox="0 0 460 300"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Docker application deployment architecture on AWS EC2"
+          >
+
+            <defs>
+              <marker
+                id="arrow3"
+                markerWidth="8"
+                markerHeight="8"
+                refX="6"
+                refY="3"
+                orient="auto"
+              >
+                <path d="M0,0 L6,3 L0,6 Z" fill="#5C6E8C"/>
+              </marker>
+            </defs>
+
+            <text x="230" y="24" text-anchor="middle"
+              font-family="JetBrains Mono, monospace"
+              font-size="10" fill="#5C6E8C" letter-spacing="1">
+              BUILD → SHIP → RUN ON EC2
+            </text>
+
+            <rect x="20" y="60" width="115" height="54" rx="8"
+              fill="#161F33" stroke="#60A5FA" stroke-width="1.4"/>
+
+            <text x="77" y="83" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">Docker Build</text>
+
+            <text x="77" y="97" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">App image</text>
+
+            <rect x="175" y="60" width="115" height="54" rx="8"
+              fill="#161F33" stroke="#5EEAD4" stroke-width="1.4"/>
+
+            <text x="232" y="83" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">SSH Deploy</text>
+
+            <text x="232" y="97" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">Secure transfer</text>
+
+            <line x1="135" y1="87" x2="175" y2="87"
+              stroke="#5C6E8C" stroke-width="1.2"
+              marker-end="url(#arrow3)"/>
+
+            <rect x="325" y="45" width="115" height="90" rx="10"
+              fill="#161F33" stroke="#FBBF66" stroke-width="1.4"/>
+
+            <text x="382" y="66" text-anchor="middle"
+              fill="#E7ECF5" font-family="JetBrains Mono, monospace"
+              font-size="11">AWS EC2</text>
+
+            <text x="382" y="80" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9">Instance</text>
+
+            <rect x="343" y="90" width="80" height="34" rx="6"
+              fill="#0D1220" stroke="#5EEAD4" stroke-width="1"/>
+
+            <text x="383" y="110" text-anchor="middle"
+              fill="#5EEAD4" font-family="JetBrains Mono, monospace"
+              font-size="9">Container</text>
+
+            <line x1="290" y1="87" x2="325" y2="87"
+              stroke="#5C6E8C" stroke-width="1.2"
+              marker-end="url(#arrow3)"/>
+
+            <rect x="60" y="180" width="340" height="90" rx="10"
+              fill="none" stroke="#3A4560" stroke-width="1"
+              stroke-dasharray="4 3"/>
+
+            <text x="230" y="202" text-anchor="middle"
+              fill="#8DA0BE" font-family="JetBrains Mono, monospace"
+              font-size="9.5">NETWORKING</text>
+
+            <text x="230" y="222" text-anchor="middle"
+              fill="#5C6E8C" font-family="JetBrains Mono, monospace"
+              font-size="9">
+              Security group configured for inbound HTTP/HTTPS
+            </text>
+
+            <text x="230" y="238" text-anchor="middle"
+              fill="#5C6E8C" font-family="JetBrains Mono, monospace"
+              font-size="9">
+              and SSH access for remote management
+            </text>
+
+            <text x="230" y="256" text-anchor="middle"
+              fill="#5C6E8C" font-family="JetBrains Mono, monospace"
+              font-size="9">
+              of the deployed container
+            </text>
+
+            <line x1="382" y1="135" x2="382" y2="180"
+              stroke="#5C6E8C" stroke-width="1.2"
+              stroke-dasharray="3 2"
+              marker-end="url(#arrow3)"/>
+
+          </svg>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         PROJECT 4
+    ===================================================== -->
+
+    <div class="project">
+
+      <div class="project-top">
+
+        <div>
+          <div class="ptag">
+            04 / CLOUD-HOSTED WEB APPLICATION
+          </div>
+
+          <h3>
+            Aman Medicos — Cloud Hosted Pharmacy Website
+          </h3>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://amanmedicos.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Website ↗
+          </a>
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <!-- DESCRIPTION: same position as Projects 1–3 -->
+
+        <div class="project-desc">
+
+          <p>
+            Built and deployed a responsive website for my own pharmacy
+            shop using React, AWS S3, and CloudFront, making it accessible
+            through a custom domain with HTTPS.
+          </p>
+
+          <p>
+            Added delivery enquiry and customer feedback features using
+            API Gateway and Lambda, with automated email notifications
+            through Amazon SNS.
+          </p>
+
+          <div class="tech-row">
+            <span>React</span>
+            <span>AWS S3</span>
+            <span>CloudFront</span>
+            <span>API Gateway</span>
+            <span>AWS Lambda</span>
+            <span>Amazon SNS</span>
+            <span>HTTPS</span>
+          </div>
+
+        </div>
+
+        <!-- IMAGE: same arch-card structure as Projects 1–3 -->
+
+        <div class="arch-card">
+
+          <div class="arch-label">
+            LIVE PROJECT PREVIEW
+          </div>
+
+          <a
+            href="https://amanmedicos.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/aman-medicos-preview.png"
+              alt="Aman Medicos pharmacy website homepage"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="preview-link">
+            <a
+              href="https://amanmedicos.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Aman Medicos ↗
+            </a>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
 
   </div>
 
-</div>
+</section>
 
-    
-  </section>
 
 
   <!-- =========================================================
