@@ -1519,7 +1519,39 @@
   font-weight: 600;
   text-decoration: none;
 }
+/* Fix Aman Medicos project layout */
+#projects .project:last-child .project-body {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 40px;
+  align-items: center;
+}
 
+#projects .project:last-child .project-body > * {
+  min-width: 0;
+  direction: ltr;
+}
+
+#projects .project:last-child .arch-card {
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#projects .project:last-child .arch-card img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  #projects .project:last-child .project-body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+}
   </style>
 </head>
 
